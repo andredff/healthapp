@@ -8,14 +8,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContaAppComponent } from './conta.app.component';
 
-
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [
-    ContaAppComponent,
-    CadastroComponent,
-    LoginComponent
-  ],
+  declarations: [ContaAppComponent, CadastroComponent, LoginComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -23,6 +22,10 @@ import { ContaAppComponent } from './conta.app.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-  ]
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+  ],
 })
-export class ContaModule { }
+export class ContaModule {}

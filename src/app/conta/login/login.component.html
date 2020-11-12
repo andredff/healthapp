@@ -1,8 +1,38 @@
 <div class="container">
     <div class="row form-login">
         <div class="col form-signin">
-            <img src="/src/assets/images/health.png" alt="">
-            Login
+
+            <mat-card>
+                <div class="d-flex justify-content-center">
+                    <img src="/assets/images/health4.png" height="160" alt="">
+                </div>
+                <mat-card-content>
+                    <div>
+                        <div class="d-flex justify-content-center mt-4">
+                            Login
+                        </div>
+                        <form>
+                            <div class="d-flex justify-content-center">
+                                <mat-form-field appearance="standard" class="w-75">
+                                    <mat-label>CPF</mat-label>
+                                    <input matInput placeholder="000.000.000-00" type="text" autocomplete="off">
+                                </mat-form-field>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <mat-form-field appearance="standard" class="w-75">
+                                    <mat-label>Senha</mat-label>
+                                    <input matInput placeholder="*********" type="password" autocomplete="off">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="d-flex justify-content-center mt-3 mb-3">
+                                <button mat-flat-button style="background-color: #3F2FCF;color: #fff;" class="w-75" (click)="login()">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
         </div>
     </div>
 </div>
