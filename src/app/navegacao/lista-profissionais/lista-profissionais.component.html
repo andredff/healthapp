@@ -1,4 +1,11 @@
 <div class="container">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <button mat-flat-button style="background-color: #00CCC1;color: #fff;" [routerLink]="['/home']">
+                Voltar
+            </button>
+        </div>
+    </div>
     <div class="row">
         <div class="col-12 mt-5">
             <h2 style="margin: 0;">Lista de profissionais</h2>
@@ -19,7 +26,7 @@
                         <p>Psicólogo(a) - CRP 57620/RJ</p>
                     </div>
                     <div class="col-md-2 link">
-                        <a>Ver perfil completo</a>
+                        <a [routerLink]="['/detalhes']">Ver perfil completo</a>
                     </div>
                 </div>
             </mat-card>
@@ -37,7 +44,7 @@
                         <p>Psicólogo(a) - CRP 60095/RJm2</p>
                     </div>
                     <div class="col-md-2 link">
-                        <a>Ver perfil completo</a>
+                        <a [routerLink]="['/detalhes']">Ver perfil completo</a>
                     </div>
                 </div>
             </mat-card>
@@ -55,7 +62,7 @@
                         <p>Psicólogo(a) - CRP 57620/RJ</p>
                     </div>
                     <div class="col-md-2 link">
-                        <a>Ver perfil completo</a>
+                        <a [routerLink]="['/detalhes']">Ver perfil completo</a>
                     </div>
                 </div>
             </mat-card>
@@ -73,7 +80,7 @@
                         <p>Psicólogo(a) - CRP 57620/RJ</p>
                     </div>
                     <div class="col-md-2 link">
-                        <a>Ver perfil completo</a>
+                        <a [routerLink]="['/detalhes']">Ver perfil completo</a>
                     </div>
                 </div>
             </mat-card>

@@ -13,9 +13,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
 import {MatIconModule} from '@angular/material/icon';
 import { ListaProfissionaisComponent } from './lista-profissionais/lista-profissionais.component';
-
+import { DetalhesComponent } from './detalhes/detalhes.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +29,8 @@ import { ListaProfissionaisComponent } from './lista-profissionais/lista-profiss
     MenuComponent,
     MenuLoginComponent,
     ListaProfissionaisComponent,
+    DetalhesComponent,
+    PagamentoComponent,
   ],
   imports: [
     CommonModule,
@@ -33,7 +40,10 @@ import { ListaProfissionaisComponent } from './lista-profissionais/lista-profiss
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule
   ],
   exports: [
     MenuComponent,

@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <button mat-flat-button style="background-color: #00CCC1;color: #fff;" [routerLink]="['/detalhes']">
+                Voltar
+            </button>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <h2 style="margin: 0;">Pagamento</h2>
+            <h4>Detalhes da consulta</h4>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="d-flex">
+                <div class="col-md-3">
+                    <img src="assets/medicos/m2.jpg" alt="">
+                </div>
+                <div class="col-md-9">
+                    <p>Adriana Almeida Ferreira Silva</p>
+
+                    <p>Psicólogo(a) - CRP 57620/RJ</p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex">
+                <div class="col-md-12">
+                    <p style="color: #00CCC1">
+                        <mat-icon style="margin: 0 6px">calendar_today</mat-icon>30 de Novembro de 2020
+                    </p>
+                    <p style="color: #00CCC1">
+                        <mat-icon style="margin: 0 6px">calendar_today</mat-icon>16:00 da tarde
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 offset-md-1">
+            <h4>Dados do cartão</h4>
+            <div class="example-container">
+                <mat-form-field appearance="fill" style="width: 100%">
+                    <mat-label>Número do cartão</mat-label>
+                    <input matInput placeholder="0000 0000 0000 0000">
+                </mat-form-field>
+                <br />
+                <mat-form-field appearance="fill" style="width: 100%">
+                    <mat-label>Nome impresso no cartão</mat-label>
+                    <input matInput placeholder="Nome do titular">
+                </mat-form-field>
+                <br />
+                <div class="d-flex" style="justify-content: space-between;">
+                    <mat-form-field appearance="fill" style="width: 50%">
+                        <mat-label>Validade</mat-label>
+                        <input matInput placeholder="MM/AAAA">
+                    </mat-form-field>
+                    <br />
+                    <mat-form-field appearance="fill" style="width: 45%">
+                        <mat-label>CVV</mat-label>
+                        <input matInput placeholder="3/4 dígitos">
+                    </mat-form-field>
+                </div>
+
+                <div>
+
+                    <button mat-flat-button style="background-color: #00CCC1;color: #fff;"
+                        class="w-100" (click)="pagar()">Confirmar pagamento
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

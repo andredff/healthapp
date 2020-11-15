@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <button mat-flat-button style="background-color: #00CCC1;color: #fff;" [routerLink]="['/lista-profissionais']">
+                Voltar
+            </button>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <h2 style="margin: 0;">Detalhes do profissional</h2>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div>
+                <img src="/assets/medicos/m2.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div>
+                <h2 style="color: #00CCC1">Aline Munhoz Marques</h2>
+                <p>Psicólogo(a) - CRP 05/59043/RJ</p>
+            </div>
+            <div>
+                <p class="title">Sobre mim</p>
+                <p class="subtitle">Olá, me chamo Aline Munhoz Marques sou Psicólogo(a) e possuo as seguintes
+                    qualificações: Psicologia na instituição Universidade Federal Fluminense em 2019.</p>
+            </div>
+            <div>
+                <p class="title">Informações acadêmicas</p>
+                <p class="subtitle">Psicologia Universidade Federal Fluminense</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12 d-flex justify-content-center">
+            <h2>Escolha uma data e horário disponíveis</h2>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-12 d-flex justify-content-center" style="flex-wrap: wrap;">
+            <div class="form-horario">
+            <mat-form-field color="accent" appearance="fill">
+                <mat-label>escolha uma data</mat-label>
+                <input matInput [matDatepicker]="picker2">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2 color="primary"></mat-datepicker>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="fill">
+                <mat-label>escolha um horário</mat-label>
+                <mat-select>
+                    <mat-option value="option">09:00</mat-option>
+                    <mat-option value="option">10:00</mat-option>
+                    <mat-option value="option">11:00</mat-option>
+
+                    <mat-option value="option">12:00</mat-option>
+                    <mat-option value="option">13:00</mat-option>
+                    <mat-option value="option">14:00</mat-option>
+                    <mat-option value="option">15:00</mat-option>
+                    <mat-option value="option">16:00</mat-option>
+                    <mat-option value="option">17:00</mat-option>
+                    <mat-option value="option">18:00</mat-option>
+
+                </mat-select>
+            </mat-form-field>
+
+            <button mat-flat-button style="background-color: #00CCC1;color: #fff;" [routerLink]="['/pagamento']" class="w-100">
+                <mat-icon style="color: #fff;margin: 0 6px">calendar_today</mat-icon>Agendar Atendimento
+              </button>
+        </div>
+        </div>
+    </div>
+
+
+
+</div>
