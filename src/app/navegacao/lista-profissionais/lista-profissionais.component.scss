@@ -1,0 +1,19 @@
+img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    a {
+     cursor: pointer;
+     color: #3F2FCF;
+     text-decoration: underline;   
+    }
+}
+
+.card-profisional:hover {
+    box-shadow: 5px 5px 10px;
+}

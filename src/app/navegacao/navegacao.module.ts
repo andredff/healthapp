@@ -14,6 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { ListaProfissionaisComponent } from './lista-profissionais/lista-profissionais.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import {MatIconModule} from '@angular/material/icon';
     FooterComponent,
     MenuComponent,
     MenuLoginComponent,
+    ListaProfissionaisComponent,
   ],
   imports: [
     CommonModule,
